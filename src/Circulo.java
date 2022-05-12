@@ -8,12 +8,12 @@ private double radio;
 
     @Override
     public double obtenerArea() {
-        return 3.1416*Math.pow(getRadio(),2);
+        return Math.PI*Math.pow(radio,2);
     }
 
     @Override
     public double obtenerPerimetro() {
-        return 2*3.1416*getRadio();
+        return Math.PI*radio*2;
     }
 
     public double getRadio() {
@@ -22,5 +22,21 @@ private double radio;
 
     public void setRadio(double radio) {
         this.radio = radio;
+    }
+
+    @Override
+    public void rellenar() {
+
+    }
+
+    @Override
+    public void duplicar() {
+        System.out.println("ha duplicado la figura");
+    }
+
+    @Override
+    public Figura hacerPequennio() {
+        Circulo circuloPeque = new Circulo(this.color, this.relleno, this.radio);
+        return circuloPeque;
     }
 }

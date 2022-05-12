@@ -12,12 +12,12 @@ private double altura;
 
     @Override
     public double obtenerArea() {
-        return getAltura()*getAncho();
+        return altura*ancho;
     }
 
     @Override
     public double obtenerPerimetro() {
-        return 2*(getAltura()+getAncho());
+        return 2*(altura+ancho);
     }
 
     public double getAncho() {
@@ -34,5 +34,20 @@ private double altura;
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    @Override
+    public void rellenar() {
+
+    }
+
+    @Override
+    public void duplicar() {
+
+    }
+
+    @Override
+    public Figura hacerPequennio() {
+        return null;
     }
 }

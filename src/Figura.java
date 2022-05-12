@@ -1,4 +1,4 @@
-public abstract class Figura {
+public abstract class Figura implements AccionesFiguraInterface {
 protected String color;
 protected boolean relleno;
 
@@ -24,5 +24,5 @@ protected boolean relleno;
     }
     public abstract double obtenerArea();
     public abstract double obtenerPerimetro();
-
+//Puede tener varios metodos abstractos y metodos con cuerpo
 }
